@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.wrap{
+    width: 1200px;
+    margin: auto;
+}
+
+.header{
+    width: 1600px; height: 848px;
+    background-repeat: no-repeat;
+    background-image: url(/images/img_bg.jpg);
+    background-position: 100% 0;
+    /* text-indent: -9999px; */
+}
+
+.logo{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(/images/pc_ico.png);
+    text-indent: -9999px;
+}
+
+.tit{
+    margin: 40px 0 0 0;
+    font-size: 40px;
+    font-family: 'Titillium Web';
+    line-height: 1.2;
+}
+.header h2 + p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    font-family: 'Noto Sans KR';
+    color: #8D8D8D;
+}
