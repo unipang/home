@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uni's Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
 <body>
 
@@ -14,36 +14,61 @@
  <div class="wrap">
     
     <header>
-     <h1 class="img-g logo">uni</h1>
+     <h1 class="logo"><a href="/index.html"><img src="../images/home/logo.png" alt=""></a></h1>
      <h2 class="tit">MY CREATIVE AND<br> SIMPLICITY MODERN<br> PROJECTS</h2>
      <p class="txt">Please check my portfolio.<br> All project is clean and simplicity modern style.</p>
     <nav>
-        <a href="#"class="total">
-            <span>메뉴</span>
-        </a>
+        <div class="menu">
+        <a href="#"><h2>메뉴</h2></a>
+        </div>
+        <ul class="box-primary-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="./html/projects.html">Project</a></li>
+            <li><a href="./html/aboutme.html">About Me</a></li>
+        </ul>
     </nav>
     </header>
 
     <div class="container">
         <div class="area-cont">
          <div class="cont-g cont1">
-        <img src="./images/home/cont-img1.png" alt="portfolio">
-        <img src="./images/home/cont-img3.png" alt="portfolio">
-       <img src="./images/home/cont-img5.png" alt="portfolio">
+             <div class="col row-1">
+       <a href="/html/project-onto.html"><img src="./images/home/cont-img1.png" alt="img">
+        <div class="txt-cont"><span>Onlinetour<br><em>Web/App</em></span></div>
+    </a> 
+    </div>
+    <div class="col row-2">
+        <img src="./images/home/cont-img3.png" alt="img">
+        <div class="txt-cont"><span>SamsungSDS<br><em>App</em></span></div>
+    </div>
+    <div class="col row-3">
+       <img src="./images/home/cont-img5.png" alt="img">
+       <div class="txt-cont"><span>SARAU<br><em>CI/BI</em></span></div>
+    </div>
         </div>
 
         <div class="cont-g cont2">
-            <img src="./images/home/cont-img2.png" alt="portfolio">
-            <img src="./images/home/cont-img4.png" alt="portfolio">
-           <img src="./images/home/cont-img6.png" alt="portfolio">
+            <div class="col row-1">
+            <img src="./images/home/cont-img2.png" alt="img">
+            <div class="txt-cont"><span>Ontong<br><em>App</em></span></div>
+        </div>
+        <div class="col row-2">
+            <img src="./images/home/cont-img4.png" alt="img">
+            <div class="txt-cont"><span>Alfrex<br><em>Web</em></span></div>
+        </div>
+        <div class="col row-3">
+           <img src="./images/home/cont-img6.png" alt="img">
+           <div class="txt-cont"><span>Doking<br><em>App</em></span></div>
             </div>
         </div>
     </div>
+</div>
 
-
-    <div class="videowrapper">
+      <div class="videowrapper">
+        <video id="bg_video" autoplay="" muted="" loop="" volume="0" data-autoplay="" class="swiper-container-horizontal">
+          <source src="/images/home/Ink - 21536.mp4" type="video/mp4">
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></video>
       </div>
-
 
 
 <div class="thumb">
@@ -53,7 +78,7 @@
     <div class="thumb-txt">
     <h2 class="tit">Hello. <br> I am <span>UNI</span></h2>
     <p class="txt">Graphic Designer and  UI Designer based <br> in Incheon</p>
-    <input type="button" value="More" class="ipt-more">
+    <a href="./html/aboutme.html"><button class="ipt-more">More</button></a>
     </div>
     </div>
 
@@ -63,7 +88,7 @@
         <a href="https://www.instagram.com/"target="_blank" class="img-g insta">인스타그램</a>
         <a href="https://twitter.com/"target="_blank" class="img-g twitter">트위터</a>
     </div>
-    <p class="txt copyright">© Copyright 2020 uni. All Rights Reserved.</p>
+    <p class="txt">© Copyright 2020 uni. All Rights Reserved.</p>
     </footer>
 </div>
 
@@ -74,6 +99,6 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./jquery/comm.js"></script> <!-- my js -->
+<script src="./js/comm.js"></script> <!-- my js -->
 </body>
 </html>
