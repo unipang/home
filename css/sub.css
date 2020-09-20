@@ -25,7 +25,7 @@
   width: 350px !important;
 }
 
-.project_filter {
+.tabs-nav {
   width: 40%;
   margin-bottom: 30px;
   display: -webkit-box !important;
@@ -153,5 +153,13 @@ dt .co {
 dt .duty {
   padding-left: 4px;
   font-family: 'Noto Sans KR';
+}
+
+.GaugeMeter {
+  position: Relative;
+  text-align: Center;
+  overflow: Hidden;
+  cursor: Default;
+  display: inline-block;
 }
 /*# sourceMappingURL=sub.css.map */

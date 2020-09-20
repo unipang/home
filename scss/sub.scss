@@ -29,7 +29,7 @@ $gray:#8D8D8D;
 .txt-cont {
     width: 350px !important ;
   }
-  .project_filter{
+  .tabs-nav{
       width: 40%;    
       margin-bottom: 30px;
       display: flex !important;
@@ -141,7 +141,10 @@ $gray:#8D8D8D;
         }
     }
 
-
-.license{
-
-}
+    .GaugeMeter {
+        position: Relative;
+        text-align: Center;
+        overflow: Hidden;
+        cursor: Default;
+        display: inline-block;
+    }
