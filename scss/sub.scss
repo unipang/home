@@ -29,7 +29,7 @@ $gray:#8D8D8D;
 .txt-cont {
     width: 350px !important ;
   }
-  .tabs-nav{
+  .portfolio_filter{
       width: 40%;    
       margin-bottom: 30px;
       display: flex !important;
@@ -67,51 +67,110 @@ $gray:#8D8D8D;
     padding-top: 55px;
 }
 
-//single page
-.link{
-    position: absolute;top: 142px;left: 238px;
+
+
+
+//project
+
+.filter-button
+{
+    font-size: 16px;
+    text-align: center;
+    border-radius: 25px;
 }
-.project-link{
-    width: 17px;height: 17px;
+.filter-button:hover
+{
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background-color: $blue;
+    border-radius: 25px;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: $blue;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    // width: 1100px;
+    margin: 0  0 20px 0;
+    // padding:0 0;
+    padding-left: 0;
+}
+
+.gallery_product:hover .txt-cont {
+    opacity: 1;
+    transform:scale(0.8,0.8);
+  }
+  //projects-onepage
+
+  .link {
+    position: absolute;
+    top: 142px;
+    left: 238px;
+  }
+  
+  .project-link {
+    width: 17px;
+    height: 17px;
     background-position: 0 -109px;
-}
-.project{
+  }
+  
+  .project {
     width: 1100px;
     margin: auto;
-.project-info{
+  }
+  
+  .project .project-info {
     margin: 50px auto 0;
-    font-family: 'Noto Sans KR'; font-weight: 700;
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
     color: #000;
     line-height: 1.3;
-    .project-txt{
-        margin: 8px auto 0;
-        font-size: 1.000em;
-        font-family: 'Noto Sans KR'; font-weight: 300;
-        color:$gray;
-    
-    }
-}
-.project-img{
+  }
+  
+  .project .project-info .project-txt {
+    margin: 8px auto 0;
+    font-size: 1.000em;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    color: #8D8D8D;
+  }
+  
+  .project .project-img {
     margin-top: 30px;
-    span{
+  }
+  
+  .project .project-img span {
     display: block;
     position: relative;
-   
-    &::after{
+  }
+  
+  .project .project-img span::after {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     content: "";
-    border: 1px solid rgba(0,0,0,.1);
-    }
-}
-     img{
-        width: 100%;
-    } 
-}
-}
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .project .project-img img {
+    width: 100%;
+  }
+  //projects-onepage
+
+
+//aboutme
 .thumb .thumb-txt{
     transform:translateY(-9%);
     width: 379px;
@@ -140,11 +199,16 @@ $gray:#8D8D8D;
             font-family:  'Noto Sans KR';
         }
     }
+//aboutme-skills
 
-    .GaugeMeter {
-        position: Relative;
-        text-align: Center;
-        overflow: Hidden;
-        cursor: Default;
-        display: inline-block;
-    }
+//aboutme-contact
+.form-group{
+  width: 50%;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+ .contact-g{
+  width: 600px;
+}
