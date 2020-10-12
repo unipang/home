@@ -6,6 +6,16 @@
     font-family: 'Noto Sans KR';
 }
 
+.nav-ham{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
 .blind{
     text-indent: -9999px;
     font-size: 0;
@@ -19,7 +29,7 @@
 }
 .wrap{
     margin: 0px;
-    width: 100%; height: 848px;
+    width: 100%; 
     position: absolute;top: 0;right: 0;
     background-repeat: no-repeat;
     background-image: url(../images/home/img_bg.jpg) ;
@@ -44,81 +54,12 @@ header{
     display: block;
     height: 32px;
 }
-/* menu */
-/* .menu {
-    display: block;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: #000;
-}
-.menu >a{
-    display: block;
-}
-.menu span{
-    display: block;
-    position: absolute;top: 28px; left: 14px;
-     width: 40%;height: 3px;
-    transform: translate(0,-50%);
-    background: #fff;
-    color:transparent;
-    transition: all .5s;
-
-}
-.menu span::before, .menu span::after{
-    content: "";
-    position: absolute;top: 0;left: 0;
-    width: 100%;height: 3px;
-    background: #fff;
-    transition: all .5s;
-}
-.menu span::before{
-    top: -7px;
-}
-.menu span::after{
-    top:7px;
-}
-
-.menu.on span{
-background: none;
-}
-
-.menu.on span::before{
-    top: 0px; transform: rotate(45deg);
-}
-.menu.on span::after{
-    top:0px;transform: rotate(-45deg);
-}
-
-.menu span{
-    text-indent: -9999px;
-
-} */
-
-/* //menu */
-
-
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
  
+/* nav-ham */
  #menuToggle
  {
    display: block;
-   position: relative;
-   top: 50px;
-   left: 80px;
-   
-   
    z-index: 1;
-   
    -webkit-user-select: none;
    user-select: none;
  }
@@ -142,13 +83,10 @@ background: none;
    display: block;
    width: 40px;
    height: 32px;
-   position: absolute;
-   top: -7px;
-   left: -5px;
    cursor: pointer;
-    opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
    -webkit-touch-callout: none;
+   color: #fff;
+   opacity: 0;
  }
  
  /*
@@ -159,10 +97,10 @@ background: none;
  {
    display: block;
    width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
+   height: 3px;
+   margin-bottom: 6px;
    position: relative;
-   background: #000;
+   background: #fff;
    
    z-index: 1;
    
@@ -187,7 +125,7 @@ background: none;
  #menuToggle input:checked ~ span
  {
    opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
+   transform: rotate(45deg) translate(5px, -5px);
 
  }
  
@@ -201,7 +139,7 @@ background: none;
 
  #menuToggle input:checked ~ span:nth-last-child(2)
  {
-   transform: rotate(-45deg) translate(0, -1px);
+   transform: rotate(-45deg) translate(px, 8px);
  }
  
 
@@ -235,17 +173,57 @@ background: none;
    transform: none;
  }
 
-/* nav-d1 */
+
 nav{
     position: fixed;
     top: 0;
-    right: 30%;
-    transform: translateX(853%);
-}
-/* //nav-d1*/
+    right: 0;
 
-.tit{
+}
+#menuToggle {
+    position: relative; z-index: 1000;
+    width: 50px;height: 50px;
+}
+#menuToggle input {
+    width: 50px;height: 50px;
+}
+#menuToggle input[type="checkbox"] + label {
+    padding-top: 2px;
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;top: 30px;right: 80px;
+    width: 50px; height: 50px;
+    background: #000;
+    text-indent: -9999px; line-height: 0;
+    transition: all .5s;
+}
+#menuToggle input[type="checkbox"] + label span {
+    opacity: 1;
+}
+#menuToggle input[type="checkbox"]:checked + label span:first-child {
+    transform: rotate(45deg) translate(5px, -4px);
+}
+#menuToggle input[type="checkbox"]:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+#menuToggle input[type="checkbox"]:checked + label span:nth-child(3) {
+    transform: rotate(-45deg) translate(1px, 8px);
+}
+#menu {
+    z-index: -1;
+}
+.nav-bar {
+    position: absolute;top: 0;right: 0;
+}
+
+/* //nav-ham */
+
+
+.main-tit{
     margin: 40px auto 0;
+}
+.tit{
     font-size: 2.500em;
     font-family: 'Titillium Web';
     font-weight: 700;
@@ -339,10 +317,11 @@ nav{
 }
 #bg_video{
     width: 100%; height: 210px;
-    margin: 150px 0 150px 0;    
+    margin: 150px 0 0 0;    
     position: absolute; top: 0; left: 0;
     border: none;
     object-fit: cover;
+    z-index: -100;
     /* background-image: url(/images/background.jpg) ; */
     /* background-size: cover;
     background-attachment: fixed; */
@@ -352,6 +331,7 @@ nav{
     max-width: 1100px;
     width: 100%;
     margin:auto;
+    padding-top: 500px;
     display: flex;
 }
 
@@ -361,7 +341,7 @@ nav{
 }
 .thumb .thumb-txt{
     width: 265px;
-    margin: 0 0 0 -20px;
+    margin: 55px 0 0 -20px;
     transform:translateY(12%);
 }
 

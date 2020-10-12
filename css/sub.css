@@ -73,6 +73,7 @@ h1 {
 }
 
 .filter-button {
+  width: 70px;
   font-size: 16px;
   text-align: center;
   border-radius: 25px;
@@ -89,6 +90,14 @@ h1 {
 .btn-default:active .filter-button:active {
   background-color: #2699FB;
   color: white;
+}
+
+.on {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2699FB;
+  border-radius: 25px;
 }
 
 .port-image {
@@ -166,9 +175,14 @@ h1 {
   padding: 0;
 }
 
+.thumb {
+  padding-top: 0;
+}
+
 .thumb .thumb-txt {
-  -webkit-transform: translateY(-9%);
-          transform: translateY(-9%);
+  margin-top: 0;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
   width: 379px;
 }
 
@@ -198,5 +212,22 @@ dt .duty {
   padding-left: 4px;
   font-family: 'Noto Sans KR';
   font-weight: 300;
+}
+
+.contact {
+  margin-top: 80px;
+}
+
+.form-group:nth-child(2) {
+  padding-left: 0;
+}
+
+.form-control {
+  margin-top: -30px;
+}
+
+.btn-primary {
+  background: #2699FB;
+  border-color: #2699FB;
 }
 /*# sourceMappingURL=sub.css.map */

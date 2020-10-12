@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+    <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,36 +15,37 @@
     
     <header>
     <h1 class="logo"><a href="./index.html"><img src="./images/home/logo.png" alt=""></a></h1>
-     <h2 class="tit">MY CREATIVE AND<br> SIMPLICITY MODERN<br> PROJECTS</h2>
+    <div class="main-tit">    
+     <strong class="tit">MY CREATIVE AND<br> SIMPLICITY MODERN<br> PROJECTS</strong>
      <p class="txt">Please check my portfolio.<br> All project is clean and simplicity modern style.</p>
+    </div>
+
      <nav role="navigation">
   <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
+   
+
+    <input type="checkbox" id="navHam">
+    <label for="navHam">
+        <span></span>
+        <span></span>
+        <span></span>
+        <em class="blind">주메뉴 열기</em>
+    </label>
+    <!-- <div class="nav-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div> -->
     
-    <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-    <ul id="menu">
-      <a href="./index.html"><li>Home</li></a>
-      <a href="./html/aboutme.html"><li>About Me</li></a>
-      <a href="./html/projects.html"><li>Projects</li></a>
-    </ul>
+
+        
+  <ul id="menu">
+    <a href="./index.html"><li>Home</li></a>
+    <a href="./html/aboutme.html"><li>About Me</li></a>
+    <a href="./html/projects.html"><li>Projects</li></a>
+  </ul>
   </div>
+  
 </nav>
     <!-- <nav>
         <div class="menu">
@@ -78,8 +79,9 @@
 
         <div class="cont-g cont2">
             <div class="col row-1">
-            <img src="./images/home/cont-ontong.png" alt="img">
-            <div class="txt-cont"><span>Ontong<br><em>App</em></span></div>
+                <a href="./html/project-ontong.html"><img src="./images/home/cont-ontong.png" alt="img">
+            <div class="txt-cont"><span>Ontong<br><em>Web/App</em></span></div>
+        </a> 
         </div>
         <div class="col row-2">
             <img src="./images/home/cont-alfrex.png" alt="img">

@@ -24,11 +24,22 @@ $(function(){
                 
             }
         });
-        
+
+        let $tab=$('.tab li');
+        $tab.on('click',function(event){
+            //a링크를 무효화
+            event.preventDefault();
+            //li의 on 클래스 삭제
+            $tab.removeClass('on');
+            //클릭한 li에 on클래스 추가
+            $(this).addClass('on');
+        })
+      
         if ($(".filter-button").removeClass("active")) {
     $(this).removeClass("active");
     }
     $(this).addClass("active");
+
 
 
     //aboutme

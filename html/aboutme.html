@@ -18,38 +18,37 @@
         <header>
 
             <h1 class="logo"><a href="../index.html"><img src="../images/home/logo.png" alt=""></a></h1>
-            <h2 class="tit">ABOUT ME</h2>
+            <div class="main-tit">
+            <strong class="tit">ABOUT ME</strong>
             <p class="txt">UI Designer <span>Publisher</span></p>
-            <nav>
+        </div>
         <nav role="navigation">
-  <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
-    
-    <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-    <ul id="menu">
-      <a href="../index.html"><li>Home</li></a>
-      <a href="./html/aboutme.html"><li>About Me</li></a>
-      <a href="./html/projects.html"><li>Projects</li></a>
-    </ul>
-  </div>
-            </nav>
+            <div id="menuToggle">
+             
+          
+              <input type="checkbox" id="navHam">
+              <label for="navHam">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <em class="blind">주메뉴 열기</em>
+              </label>
+              <!-- <div class="nav-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div> -->
+              
+          
+                  
+            <ul id="menu">
+              <a href="../index.html"><li>Home</li></a>
+              <a href="./aboutme.html"><li>About Me</li></a>
+              <a href="./projects.html"><li>Projects</li></a>
+            </ul>
+            </div>
+            
+          </nav>
            </header>
            <div class="container container-about">
              <div class="thumb">

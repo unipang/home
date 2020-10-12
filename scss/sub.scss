@@ -65,7 +65,9 @@ h1{
         color: white;
         border-radius: 25px;
         text-decoration: none;
+    
     }
+
   }
 .project-inner {
     // padding-bottom: 0 ;
@@ -76,12 +78,14 @@ h1{
 
 .filter-button
 {
+  width: 70px;
     font-size: 16px;
     text-align: center;
     border-radius: 25px;
 }
 .filter-button:hover
 {
+
     font-size: 16px;
     text-align: center;
     color: #ffffff;
@@ -94,7 +98,13 @@ h1{
     background-color: $blue;
     color: white;
 }
-
+.on{
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: $blue;
+  border-radius: 25px;
+}
 .port-image
 {
     width: 100%;
@@ -176,8 +186,12 @@ h1{
 .container-about{
   padding: 0;
 }
+.thumb{
+  padding-top: 0;
+}
 .thumb .thumb-txt{
-    transform:translateY(-9%);
+  margin-top: 0;
+    transform:translateY(-3%);
     width: 379px;
   }
 
@@ -206,6 +220,21 @@ h1{
             font-weight: 300;
         }
     }
+
+
 //aboutme-skills
 
 //aboutme-contact
+.contact{
+  margin-top: 80px;
+}
+.form-group:nth-child(2) {
+  padding-left: 0;
+}
+.form-control{
+  margin-top: -30px;
+}
+.btn-primary{
+  background:$blue;
+  border-color:$blue;
+}

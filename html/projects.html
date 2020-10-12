@@ -8,7 +8,6 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/comm.js"></script> <!-- my js -->
-
     <link rel="stylesheet" href="../css/comm.css">
     <link rel="stylesheet" href="../css/sub.css">
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -18,37 +17,37 @@
         <header>
 
         <h1 class="logo"><a href="../index.html"><img src="../images/home/logo.png" alt=""></a></h1>
-        <h2 class="tit">MY PROJECTS</h2>
+        <div class="main-tit">
+        <strong class="tit">MY PROJECTS</strong>
         <p class="txt">Please check my portfolio. <br>All project is clean and simplicity modern style.</p>
-        <nav role="navigation">
-            <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
-              <input type="checkbox" />
-              
-              <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
+    </div>
+    <nav role="navigation">
+        <div id="menuToggle">
+         
+      
+          <input type="checkbox" id="navHam">
+          <label for="navHam">
               <span></span>
               <span></span>
               <span></span>
+              <em class="blind">주메뉴 열기</em>
+          </label>
+          <!-- <div class="nav-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div> -->
+          
+      
               
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
-              <ul id="menu">
-                <a href="../index.html"><li>Home</li></a>
-                <a href="/html/aboutme.html"><li>About Me</li></a>
-                <a href="/html/projects.html"><li>Projects</li></a>
-              </ul>
-            </div>
-          </nav>
+        <ul id="menu">
+          <a href="../index.html"><li>Home</li></a>
+          <a href="./aboutme.html"><li>About Me</li></a>
+          <a href="./projects.html"><li>Projects</li></a>
+        </ul>
+        </div>
+        
+      </nav>
        </header>
 
        <div class="container">
@@ -56,8 +55,8 @@
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
         </div>
 
-        <ul>
-            <li class="btn filter-button active" data-filter="all">All</li>
+        <ul class="tab">
+            <li class="btn filter-button active on" data-filter="all">All</li>
             <li class="btn filter-button" data-filter="web">Webs</li>
             <li class="btn filter-button" data-filter="app">Apps</li>
             <li class="btn filter-button" data-filter="etc">Etc</li>

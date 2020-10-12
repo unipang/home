@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/comm.js"></script> <!-- my js -->
+
+    <link rel="stylesheet" href="../css/comm.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+
+        <h1 class="logo"><a href="../index.html"><img src="../images/home/logo.png" alt=""></a></h1>
+        <div class="main-tit">
+        <strong class="tit">MY PROJECTS</strong>
+        <p class="txt">Please check my portfolio. <br>All project is clean and simplicity modern style.</p>
+    </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="/html/aboutme.html"><li>About Me</li></a>
+                <a href="/html/projects.html"><li>Projects</li></a>
+              </ul>
+            </div>
+          </nav>
+       </header>
+
+       <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        </div>
+
+        <ul class="tab">
+            <li class="btn filter-button active on" data-filter="all">All</li>
+            <li class="btn filter-button" data-filter="web">Webs</li>
+            <li class="btn filter-button" data-filter="app">Apps</li>
+            <li class="btn filter-button" data-filter="etc">Etc</li>
+        </ul>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web app">
+                <a href="../html/project-onto.html"><img src="../images/projects/cont-pj-ontour.png" alt="img" class="img-responsive">
+                <div class="txt-cont"><span>Onlinetour<br><em>Web/App</em></span></div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web app">
+                <a href="../html/project-ontong.html"><img src="../images/projects/cont-pj-ontong.png" alt="img" class="img-responsive" >
+                 <div class="txt-cont"><span>Ontong<br><em>Web/App</em></span></div>
+                </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter app">
+                <a href="../html/project-onto2.html"><img src="../images/projects/cont-pj-sds.png" alt="img"  class="img-responsive">
+                <div class="txt-cont"><span>SamsungSDS<br><em>App</em></span></div>
+                </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web">
+                <a href="../html/project-onto2.html"><img src="../images/projects/cont-pj-alfrex.png" alt="img"  class="img-responsive">
+                <div class="txt-cont"><span>Alfrex<br><em>Web</em></span></div>
+                </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter etc">
+                <a href="../html/project-onto2.html"><img src="../images/projects/cont-pj-srau.png" alt="img"  class="img-responsive">
+                <div class="txt-cont"><span>SARAU<br><em>Etc</em></span></div>
+                </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter app">
+                <a href="../html/project-onto2.html"><img src="../images/projects/cont-pj-doking.png" alt="img"  class="img-responsive">
+                 <div class="txt-cont"><span>Doking<br><em>App</em></span></div>
+                </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web">
+                <a href="../html/project-onto2.html"><img src="../images/projects/cont-pj-upp.png" alt="img"  class="img-responsive">
+                    <div class="txt-cont"><span>U:PP<br><em>Web</em></span></div>
+                </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter etc">
+                <a href="../html/project-onto2.html"><img src="../images/projects/cont-pj-jam.png" alt="img"  class="img-responsive">
+                    <div class="txt-cont"><span>Jam<br><em>etc</em></span></div>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter app">
+                    <a href="../html/project-onto2.html"><img src="../images/projects/con-pj-quiz.png" alt="img"  class="img-responsive">
+                        <div class="txt-cont"><span>Quiz Brunch<br><em>App</em></span></div>
+                    </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="sns">
+            <a href="https://www.facebook.com/" target="_blank" class="img-g fb">페이스북</a>
+            <a href="https://www.instagram.com/"target="_blank" class="img-g insta">인스타그램</a>
+            <a href="https://twitter.com/"target="_blank" class="img-g twitter">트위터</a>
+        </div>
+        <p class="txt">© Copyright 2020 uni. All Rights Reserved.</p>
+        </footer>
+    </div>
+    
+    <div class="quick-sns">
+        <a href="https://www.facebook.com/" target="_blank" class="img-g q-fb">페이스북</a>
+        <a href="https://www.instagram.com/"target="_blank" class="img-g q-insta">인스타그램</a>
+        <a href="https://twitter.com/"target="_blank" class="img-g q-twitter">트위터</a>
+    </div>
+
+</body>
+</html>
