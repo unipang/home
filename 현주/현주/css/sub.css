@@ -91,6 +91,14 @@ h1 {
   color: white;
 }
 
+.on {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2699FB;
+  border-radius: 25px;
+}
+
 .port-image {
   width: 100%;
 }

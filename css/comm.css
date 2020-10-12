@@ -68,7 +68,6 @@ header{
  {
    text-decoration: none;
    color: #232323;
-   
    transition: color 0.3s ease;
  }
  
@@ -176,8 +175,11 @@ header{
 
 nav{
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 0;right: 0;
+    /* right: 0;bottom: 0;
+    background: rgba(0,0,0,.5);
+    justify-content: right;
+    align-items: right; */
 
 }
 #menuToggle {
@@ -197,6 +199,7 @@ nav{
     background: #000;
     text-indent: -9999px; line-height: 0;
     transition: all .5s;
+    z-index: 1000;
 }
 #menuToggle input[type="checkbox"] + label span {
     opacity: 1;
@@ -211,7 +214,7 @@ nav{
     transform: rotate(-45deg) translate(1px, 8px);
 }
 #menu {
-    z-index: -1;
+    z-index: 100;
 }
 .nav-bar {
     position: absolute;top: 0;right: 0;

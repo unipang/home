@@ -115,10 +115,14 @@ h1 {
           transform: scale(0.8, 0.8);
 }
 
+.link-g {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .link {
-  position: absolute;
-  top: 142px;
-  left: 238px;
+  padding: 23px 0 0 10px;
 }
 
 .project-link {
@@ -215,7 +219,7 @@ dt .duty {
 }
 
 .contact {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .form-group:nth-child(2) {
