@@ -41,6 +41,7 @@ header{
     margin:auto;
     padding-top: 45px;
     position: relative;
+    z-index: 100;
 }
 
 .logo{
@@ -182,6 +183,12 @@ nav{
     align-items: right; */
 
 }
+nav::after{
+    content: "";
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background: rgba(0,0,0,.5);
+}
 #menuToggle {
     position: relative; z-index: 1000;
     width: 50px;height: 50px;
@@ -207,6 +214,7 @@ nav{
 #menuToggle input[type="checkbox"]:checked + label span:first-child {
     transform: rotate(45deg) translate(5px, -4px);
 }
+
 #menuToggle input[type="checkbox"]:checked + label span:nth-child(2) {
     opacity: 0;
 }

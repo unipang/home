@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/comm.css">
+    <link rel="stylesheet" href="../css/sub.css">
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/GaugeMeter.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".GaugeMeter").gaugeMeter();
+      });
+    </script>
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <style>
+.skill{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+}
+.GaugeMeter{
+    padding: 0;
+    margin: 0;
+  Position:        Relative;
+  Text-Align:      Center;
+  Overflow:        Hidden;
+  Cursor:          Default;
+}
+
+.GaugeMeter SPAN,
+.GaugeMeter B{
+  Margin:          -5% 23%;
+  Width:           54%;
+  Position:        Absolute;
+  Text-align:      Center;
+  Display:         Inline-Block;
+  Color:           #2699FB;
+  Font-Weight:     100;
+  Font-Family:     'Titillium Web';
+  Overflow:        Hidden;
+  White-Space:     NoWrap;
+  Text-Overflow:   Ellipsis;
+}
+.GaugeMeter[data-style="Semi"] B{
+  Margin:          0 10%;
+  Width:           80%;
+}
+
+.GaugeMeter S,
+.GaugeMeter U{
+  Text-Decoration: None;
+  Font-Size:       .5em;
+  Opacity:         .5;
+}
+
+.GaugeMeter B{
+  Color:           Black;
+  Font-Weight:     300;
+  Font-Size:       14px;
+  Opacity:         .8;
+}
+        </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+
+            <h1 class="logo"><a href="../index.html"><img src="../images/home/logo.png" alt=""></a></h1>
+            <div class="main-tit">
+            <strong class="tit">ABOUT ME</strong>
+            <p class="txt">UI Designer <span>Publisher</span></p>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+             
+          
+              <input type="checkbox" id="navHam">
+              <label for="navHam">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <em class="blind">주메뉴 열기</em>
+              </label>
+              <!-- <div class="nav-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div> -->
+              <div class="bg"></div>
+          
+                  
+            <ul id="menu">
+              <a href="../index.html"><li>Home</li></a>
+              <a href="./aboutme.html"><li>About Me</li></a>
+              <a href="./projects.html"><li>Projects</li></a>
+            </ul>
+            </div>
+            
+          </nav>
+           </header>
+           <div class="container container-about">
+             <div class="thumb">
+                <div class="thumb-img">
+                    <img src="../images/home/thumb-img.png" alt="">
+                    </div>
+                    <div class="thumb-txt">
+                    <h2 class="tit">Hello. <br> I am <span>UNI</span></h2>
+                    <p class="txt">Graphic Designer and  UI Designer based <br> in Incheon</p>
+                    <div class="history">
+                        <dl><p class="history-tit"> History</p>
+                        <dt>
+                            12.01 - 12.09<span class="co">삼성증권</span> <span class="duty"> CS업무</span>
+                        </dt>
+                        <dt>
+                            12.09 - 13.03<span class="co">SBS컴퓨터아카데미</span><span class="duty">웹디자인 수료</span>
+                        </dt>
+                        <dt>
+                            13.09 - 19.10<span class="co">드림머그</span><span class="duty">UI디자인 대리</span>
+                        </dt>
+                        <dt>
+                            19.10 - 20.06<span class="co">온라인투어</span><span class="duty">UXD팀 계장</span>
+                        </dt>
+                        <dt>
+                            20.07 - 20.10<span class="co">더조은컴퓨터아카데미</span><span class="duty">웹퍼블리싱 수료</span>
+                        </dt>
+                    </dl>
+                    </div>
+                    <div class="license">
+                        <dl><p class="history-tit"> License</p>
+                        <dt>
+                            12.12<span class="co">웹디자인기능사</span>
+                        </dt>
+                        <dt>
+                            13.12<span class="co">컴퓨터그래픽스운용기능사</span>
+                        </dt>
+                        <dt>
+                            16.08<span class="co">2종 운전면허</span>
+                        </dt>
+                        <dt>
+                            17.08<span class="co">JPLT N2 </span><span class="duty">일본어능력시험</span>
+                        </dt>
+                        <dt>
+                            20.09<span class="co">新HSK 3급</span><span class="duty">중국어능력시험</span>
+                        </dt>
+                    </dl>
+                    </div>
+                </div>
+                </div>
+              <div class="skill">
+                    <div class="GaugeMeter" id="GaugeMeter_1" data-percent="85" data-append="%" data-size="250" data-label="Photoshop/Illust" data-theme="#2699FB"  data-color="#2699FB" ></div>
+                    <div class="GaugeMeter" id="GaugeMeter_1" data-percent="90" data-append="%" data-size="250" data-label="XD" data-theme="#2699FB"  data-color="#2699FB" ></div>
+                    <div class="GaugeMeter" id="GaugeMeter_1" data-percent="50" data-append="%" data-size="250" data-label="Animate" data-theme="#2699FB"  data-color="#2699FB" ></div>
+                    <div class="GaugeMeter" id="GaugeMeter_1" data-percent="50" data-append="%" data-size="250" data-label="HTML/CSS" data-theme="#2699FB"  data-color="#2699FB" ></div>
+
+                </div>
+               
+                <div class="contact">
+                <h2 class="tit">Hire uni</h2>
+                <p class="txt">Contact me at anytime!</p>
+                  <!-- forms -->
+                  <form action="/action_page.php" class="mt-5 form-contact slideanim">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="usr" class="blind">Name:</label>
+                            <input type="text" class="form-control" id="usr" name="username" placeholder="Username">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="email" class="blind">email:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comment" class="blind">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+        <!-- //container -->
+          
+        </div>
+    </div>
+         <footer>
+            <div class="sns">
+                <a href="https://www.facebook.com/" target="_blank" class="img-g fb">페이스북</a>
+                <a href="https://www.instagram.com/"target="_blank" class="img-g insta">인스타그램</a>
+                <a href="https://twitter.com/"target="_blank" class="img-g twitter">트위터</a>
+            </div>
+            <p class="txt">© Copyright 2020 uni. All Rights Reserved.</p>
+            </footer>
+        </div>
+
+</body>
+</html>
